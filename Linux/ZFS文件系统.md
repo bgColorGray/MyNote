@@ -82,6 +82,12 @@ sudo zfs create pool/home
 sudo zfs set mountpoint=/media/bgcol/pool pool/home
 ```
 
+#### 开启文件去重
+
+```shell
+sudo zfs set dedup=on pool
+```
+
 #### 导入池
 
 ```bash
