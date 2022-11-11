@@ -105,6 +105,6 @@ echo "123" | sudo zfs snapshot pool/home@"$now"
 
 查看快照
 
-```纯文本
+``` 纯文本
 zfs list -t snapshot
 ```

@@ -25,7 +25,7 @@ docker run -it -v <本地项目目录>:<容器内目录> \
 **示例：**
 
 ```bash
-docker run -it -v /home/bgcol/Android/Clean/Hi3559AV100_SDK_V2.0.3.0_V02:/tx200c \
+docker run -it -v /intel_pool/Project:/tx200c \
 -v /opt/hisi-linux/x86-arm/aarch64-himix100-linux:/opt/aarch64-himix100-linux \
 -v /opt/hisi-linux/x86-arm/gcc-arm-none-eabi-4_9-2015q3:/opt/gcc-arm-none-eabi-4_9-2015q3 \
 -v /home/bgcol/.ssh:/root/.ssh \

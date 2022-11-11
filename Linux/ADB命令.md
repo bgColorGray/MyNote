@@ -36,6 +36,80 @@ sudo rm -r out/target/common/obj/APPS/EcarxRecorder_intermediates/
 
 ```
 
+```
 adb root ; adb remount ; adb push out/target/product/ecarxICp1\_64/system/priv-app/AdapterAPITest/AdapterAPITest.apk system/priv-app/AdapterAPITest/AdapterAPITest.apk ; adb reboot ; sleep 25 ;scrcpy &
+```
 
+```
 ./mk -ud e02\_5mc7ch\_qjmt\_1280x768\_r32\_4\_p01\_sn15\_v02 mm ecarx/sdk/adapterAPITest/
+```
+
+
+
+#### build path
+
+```
+docker 
+```
+
+
+
+#### build model
+
+```bash
+rm -r ./dwj/HolyLauncher/ ; \
+cp -r ../bird/mmi/studio_code/HolyLauncher/ ./dwj/HolyLauncher/ ; \
+./mk -ud tx105c_demo_5mc4ch_elink_1600x720_r128_16_p01_sn15_v00 mm ./dwj/HolyLauncher ; \
+cp ./out/target/product/k62v1_64_bsp/system/priv-app/HolyLauncher/HolyLauncher.apk ../bird/alps/dwj/
+```
+
+```
+rm -r ./vendor/mediatek/proprietary/packages/apps/FileManager/ ; \
+cp -r ../bird/mmi/studio_code/HolyLauncher/ ./vendor/mediatek/proprietary/packages/apps/FileManager/ ; \
+./mk -ud tx105c_demo_5mc4ch_elink_1600x720_r128_16_p01_sn15_v00 mm ./vendor/mediatek/proprietary/packages/apps/FileManager ; \
+```
+
+
+
+#### push APK
+
+```bash
+adb root;adb remount;adb push out/target/product/k62v1_64_bsp/system/priv-app/HolyLauncher/HolyLauncher.apk /system/priv-app/HolyLauncher;adb reboot;adb logcat -G 4m;adb logcat | grep CarLauncher_Activity
+```
+
+
+
+#### 查找包名APK位置
+
+```
+adb shell pm path com.mediatek.filemanager
+```
+
+#### *查看*将要启动或退出*app*的*包名*
+
+```
+ *adb shell am monitor
+```
+
+#### 修改设置单位
+
+```bash
+adb shell settings list global| grep unit
+```
+
+```bash
+adb shell settings put global car_settings_unit_speed km/h
+```
+
+
+
+#### FTPServer调试
+
+```
+cd /intel_pool/Project/EVB/bird/mmi/sdudio_code/swiftp-master/app/fdroid_free/debug
+```
+
+```
+mv ./app-fdroid_free-debug.apk FTPServer.apk;adb root;adb remount; adb push ./FTPServer.apk /system/priv-app/FTPServer/;adb reboot;adb logcat -G 4m;
+```
+
