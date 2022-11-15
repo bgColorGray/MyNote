@@ -44,33 +44,6 @@ adb root ; adb remount ; adb push out/target/product/ecarxICp1\_64/system/priv-a
 ./mk -ud e02\_5mc7ch\_qjmt\_1280x768\_r32\_4\_p01\_sn15\_v02 mm ecarx/sdk/adapterAPITest/
 ```
 
-
-
-#### build path
-
-```
-docker 
-```
-
-
-
-#### build model
-
-```bash
-rm -r ./dwj/HolyLauncher/ ; \
-cp -r ../bird/mmi/studio_code/HolyLauncher/ ./dwj/HolyLauncher/ ; \
-./mk -ud tx105c_demo_5mc4ch_elink_1600x720_r128_16_p01_sn15_v00 mm ./dwj/HolyLauncher ; \
-cp ./out/target/product/k62v1_64_bsp/system/priv-app/HolyLauncher/HolyLauncher.apk ../bird/alps/dwj/
-```
-
-```
-rm -r ./vendor/mediatek/proprietary/packages/apps/FileManager/ ; \
-cp -r ../bird/mmi/studio_code/HolyLauncher/ ./vendor/mediatek/proprietary/packages/apps/FileManager/ ; \
-./mk -ud tx105c_demo_5mc4ch_elink_1600x720_r128_16_p01_sn15_v00 mm ./vendor/mediatek/proprietary/packages/apps/FileManager ; \
-```
-
-
-
 #### push APK
 
 ```bash
@@ -88,7 +61,25 @@ adb shell pm path com.mediatek.filemanager
 #### *查看*将要启动或退出*app*的*包名*
 
 ```
- *adb shell am monitor
+adb shell am monitor
+```
+
+#### 查看已安装的包名
+
+```
+adb shell pm list packages
+```
+
+
+
+#### QjLauncher
+
+```
+rm -r ./dwj/QjLauncher/ ; cp -r ../bird/mmi/sdudio_code/QjLauncher/ ./dwj/ ; ./mk -ud e02_5mc7ch_qjmt_1280x768_r32_4_p01_sn15_v02_c mm ./dwj/QjLauncher/
+```
+
+```
+adb root ; adb remount ; adb push ./out/target/product/ecarxICp1_64/system/priv-app/QJLauncher/QJLauncher.apk /system/priv-app/QJLauncher/;adb reboot ;adb logcat -G 4m;
 ```
 
 #### 修改设置单位

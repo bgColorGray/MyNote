@@ -10,6 +10,6 @@ docker pull bgcol/elinkbuild:14.04_android
 
 ```bash
 docker run -it -v <本地代码路径>:<容器内代码路径> c2c2c80f2774
-#示例 docker run -it -v /media/root/HDD/TX510C:/510 c2c2c80f2774
+#示例 docker run -it -v /intel_pool/Project:/Project c2c2c80f2774
 
 ```
