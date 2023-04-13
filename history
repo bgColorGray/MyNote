@@ -1,0 +1,1000 @@
+ 1056  grep "hex_array_printk" . -irn 
+ 1057  cd ..
+ 1058  grep "BIRD_ACCDET" . -irn 
+ 1059  grep "#if" . -irn 
+ 1060  ./mk -ud tx105b_4mc4ch_xbs_zs_1280x720_r32_2_p01_sn15_v01 R
+ 1061  ./git pull
+ 1062  git status
+ 1063  git add alps/kernel-4.9/drivers/misc/mediatek/ driver/mk_config/k62_tx105B_4mc4ch_elink_1280x400_smt/ 
+ 1064  git status
+ 1065  git commit -m "[driver][tx105b GPIO测试 micbias1输出ok]"
+ 1066  ./git pull
+ 1067  ./git push 
+ 1068  git log 
+ 1069  git pull
+ 1070  ./git pull
+ 1071  git status
+ 1072  git add alps/kernel-4.9/drivers/misc/ecp mmi/studio_code/driver/ecp/ 
+ 1073  git status
+ 1074  git commit -m "[driver][ECP模块 AP spi发送长度设置为可变长度，最大300字节]"
+ 1075  ./git pull
+ 1076  ./git push 
+ 1077  git log 
+ 1078  ./mk -ud tx105a_4mc4ch_elink_1280x400_r32_2_p01_sn15_smt_v00 R
+ 1079  grep "hex_array_ecp_printk" . -irn 
+ 1080  grep "hex_array_printk" . -irn 
+ 1081  grep "k62_tx105B_4mc4ch_elink_1280x400_smt" . -irn 
+ 1082  cd ..
+ 1083  cd alps/
+ 1084  ./mk -ud tx105b_4mc4ch_elink_1280x400_r32_2_p01_sn15_smt_v00 new
+ 1085  ./mk -ud tx105b_4mc4ch_elink_1280x400_r32_2_p01_sn15_smt_v00 R
+ 1086  ./mk -ud tx105b_4mc4ch_elink_1280x400_r32_2_p01_sn15_smt_v00 R
+ 1087  grep "BIRD_ACCDET" . -irn 
+ 1088  git pull
+ 1089  ./mk cx101_62_fdd5m_bxt_h12_hdplus1600x720_r64_6_demo new
+ 1090  rm -rf SE1000_E04_SDK
+ 1091  grep "nt36525b_hdp_dsi_vdo_tm_tm_cc7" . -irn 
+ 1092  grep "get_task_" . -rn 
+ 1093  grep "wd050sh40qf_za7783_1024x600_tx106c" . -rn 
+ 1094  cd ..
+ 1095  grep "wd050sh40qf_za7783_1024x600_tx106c" . -rn 
+ 1096  ./git pull
+ 1097  adb pull sdcard/mtklog/mobilelog . 
+ 1098  adb root
+ 1099  adb shell
+ 1100  adb root
+ 1101  adb shell
+ 1102  ./mk cx101_62_fdd5m_bxt_h12_hdplus1600x720_r64_6_demo R
+ 1103  grep "do_lcm_vdo_lp_read" . -irn
+ 1104  adb pull sdcard/mtklog/mobilelog . 
+ 1105  grep "do_lcm_vdo_lp_read" . -irn 
+ 1106  grep "TRAN_LCM_POWER_GPIO" . -irn 
+ 1107  grep "LCD_BIAS" . -irn 
+ 1108  adb root
+ 1109  adb remount
+ 1110  adb shell cat /proc/kmsg|grep  lcm
+ 1111  adb shell cat /proc/kmsg|grep  
+ 1112  adb shell cat /proc/kmsg
+ 1113  grep "lcm" . -irn
+ 1114  grep "do_lcm_vdo_lp_read" . -irn
+ 1115  adb pull sdcard/mtklog/mobilelog . 
+ 1116  repo_mtk init -u ranyingchun@192.168.50.56:../../var/BIRD_PHONE_P0MP1_K39TV1_BSP/manifest.git
+ 1117  repo_mtk sync
+ 1118  grep "proj" . -irn 
+ 1119  repo_mtk sync
+ 1120  grep "PHONE" . -irn 
+ 1121  grep "I2C_LCD" . -rn 
+ 1122  gedit ./cc7_h626/codegen_pl.dws
+ 1123  gedit ./cc7_h626/codegen_kernel.dws
+ 1124  gedit ./cc7_h626/codegen_lk.dws
+ 1125  grep "LCD_" . -rn
+ 1126  adb shell
+ 1127  grep "wg675ghl40qf_za7783_wvgalnl_tx106c" . -rn 
+ 1128  gedit ./k62_tx106c_5mc4ch_elink_800x480_demo/k62v1_64_bsp_debug_defconfig
+ 1129  grep "k62_tx106c_5mc4ch_elink_800x480_demo" . -rn 
+ 1130  gedit ./tx106c_5mc4ch_elink_800x480_r16_2_p00_sn15_drv_v00.mk
+ 1131  grep "DTS_GPIO_STATE_LCD_BIAS_ENP1" . -rn 
+ 1132  cd ..
+ 1133  grep "DTS_GPIO_STATE_LCD_BIAS_ENP1" . -rn 
+ 1134  gedit ./video/mt6765/videox/disp_dts_gpio.h
+ 1135  grep "disp_dts_gpio_select_state" . -rn 
+ 1136  gedit ./lcm/wd050sh40qf_za7783_1024x600_tx106c/wd050sh40qf_za7783_1024x600_tx106c.c
+ 1137  gedit ./lcm/wg675ghl40qf_za7783_wvgalnl_tx106c/wg675ghl40qf_za7783_wvgalnl_tx106c.c
+ 1138  grep "i2c_master_send" . -rn 
+ 1139  grep "i2c_master_send" . -rn 
+ 1140  gedit ./wg675ghl40qf_za7783_wvgalnl_tx106c/wg675ghl40qf_za7783_wvgalnl_tx106c.c
+ 1141  gedit ./t800f315p_lt9211_1280x720/t800f315p_lt9211_1280x720.c
+ 1142  gedit ./wd050sh40qf_za7783_1024x600_tx106c/wd050sh40qf_za7783_1024x600_tx106c.c
+ 1143  grep "reboot" . -irn 
+ 1144  gedit ./kernel_log_6__2023_0222_090927
+ 1145  cd ..
+ 1146  grep "reboot" . -irn 
+ 1147  grep "get_task" . -rn
+ 1148  grep "get_task_cre" . -rn
+ 1149  grep "compatible" . -rn
+ 1150  grep "I2C_LCD" . -rn
+ 1151  grep "LCD" . -rn
+ 1152  grep "compatible" . -irn 
+ 1153  adb shelgrep "LCM_TIME_OPT_ENABLE" . -irn
+ 1154  grep "nt36525b_hdp_dsi_vdo_tm_tm_cc7" . -irn
+ 1155  grep "LCM_TIME_OPT_ENABLE" . -irn
+ 1156  adb pull sdcard/mtklog/mobilelog . 
+ 1157  grep "LCM" . -rn 
+ 1158  grep "LCD" . -rn 
+ 1159  adb pull sdcard/mtklog/mobilelog . 
+ 1160  ./siengine_downloadtool download downloader_fip_ufs.bin
+ 1161  ./siengine_downloadtool flash downloader_fip_ufs.bin
+ 1162  ./siengine_downloadtool oem "setufs 0"
+ 1163  ./siengine_downloadtool download  '/media/root/WorkSpace/project/SE1000_E04_SDK_1115/SE1000_E04_SDK_V1.3/deploy/build/lun0_fip.bin'
+ 1164  grep "write_dbi" . -rn
+ 1165  grep "base =" . -rn
+ 1166  grep "base = " . -rn
+ 1167  grep " base = " . -rn
+ 1168  grep "111111" . -rn
+ 1169  grep "k62_tx105c_5mc4ch_elink_1600x720_demo" . -irn 
+ 1170  qgit 
+ 1171  rm -r /root/.config/bcompare
+ 1172  git pull
+ 1173  grep "pcie_write" . -irn 
+ 1174  gedit ./mlinux/moal_pcie.c
+ 1175  grep "pcie_link" . -irn 
+ 1176  cd ..
+ 1177  grep "pcie_link" . -irn 
+ 1178  grep "pcie" . -irn 
+ 1179  grep "prink" . -irn 
+ 1180  grep "prin" . -irn 
+ 1181  grep "write_dbi" . -irn 
+ 1182  grep "dw_pcie" . -irn 
+ 1183  cd ..
+ 1184  grep "dw_pcie" . -irn 
+ 1185  gedit ./pci/dwc/pcie-designware.c
+ 1186  grep "dw_pcie_write" . -irn 
+ 1187  grep "111111" . -irn 
+ 1188  grep "dw_pcie_link_up" . -irn 
+ 1189  grep "siengine_pcie_get_resource" . -irn 
+ 1190  repo init -u git@192.168.50.199:BIRD_ECARX_P0MP13_E02_EVB/manifest.git
+ 1191  rm -r .repo/
+ 1192  repo init -u git@192.168.50.199:BIRD_ECARX_P0MP13_E02_EVB/manifest.git
+ 1193  zfs
+ 1194  apt install zfsutils-linux
+ 1195  zpool import 
+ 1196  xdg-open ./
+ 1197  zpool import pool
+ 1198  zpool import -f pool 
+ 1199  zpool import -f
+ 1200  zpool import -f pool 
+ 1201  zpool import -F pool 
+ 1202  zpool import -f pool 
+ 1203  git config --global user.name xujing
+ 1204  git config --global user.email jing.xu@nbbsw.com
+ 1205  git config --global color.ui true
+ 1206  git config --global pull.rebase true
+ 1207  git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+ 1208  git status 
+ 1209  git diff 
+ 1210  git status 
+ 1211  chmod 600 ./*
+ 1212  git stutas 
+ 1213  git status 
+ 1214  git lg 
+ 1215  git checkout -f ;git clean -xdf 
+ 1216  ./git pull 
+ 1217  rm /root/.ssh/known_hosts 
+ 1218  cat /root/.ssh/id_rsa.pub 
+ 1219  cat /root/.ssh/id_rsa
+ 1220  ls -l /root/.ssh/
+ 1221  chmod 600 /root/.ssh/id_rsa*
+ 1222  ./git pull 
+ 1223  xj fe
+ 1224  reboot
+ 1225  xj mount
+ 1226  xj fe
+ 1227  xj ft 
+ 1228  toDesk
+ 1229  todesk
+ 1230  ./clear 
+ 1231  cd ../bird/
+ 1232  git status 
+ 1233  git add ./
+ 1234  git commit -m "[MMI][更新仪表]"
+ 1235  ./git push 
+ 1236  git lg 
+ 1237  git lg 
+ 1238  apt-get install -y samba
+ 1239  smbpasswd -a root
+ 1240  git remote -v 
+ 1241  ./git pull 
+ 1242  git add ./
+ 1243  git commit -m "[MMI][关闭sos功能]"
+ 1244  git show 
+ 1245  ./git push 
+ 1246  git add ./
+ 1247  git commit -m "[MMI][SW0MICS001H0916]"
+ 1248  ./git push 
+ 1249  git lg 
+ 1250  git remote -v 
+ 1251  ./git pull 
+ 1252  git lg 
+ 1253  cd ../alps/
+ 1254  git pull origin master 
+ 1255  xj kmsg
+ 1256  xj kmsg > /media/elink_temp/kmsg_tx105b.txt
+ 1257  xj mount
+ 1258  xj kmsg > /media/elink_temp/kmsg_tx105b.txt
+ 1259  ssh git@192.168.50.199
+ 1260  adb shell cat /proc/kmsg
+ 1261  git remote -v 
+ 1262  git lg 
+ 1263  adb root
+ 1264  adb remount
+ 1265  adb root
+ 1266  adb remount
+ 1267  adb root
+ 1268  adb remount
+ 1269  ./git pull 
+ 1270  adb logcat -v time 
+ 1271  adb logcat -v time | grep E\/
+ 1272  adb root
+ 1273  adb remount
+ 1274  adb shell 
+ 1275  adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1276  adb reboot 
+ 1277  adb logcat -v time | grep E\/
+ 1278  adb logcat -v time | grep ElinkR\|AndroidR
+ 1279  adb logcat -v time | grep "ElinkR\|AndroidR"
+ 1280  adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1281  adb root
+ 1282  adb remount
+ 1283  adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1284  adb reboot 
+ 1285  adb logcat -v time | grep "ElinkR\|AndroidR"
+ 1286  adb shell dumpsys meminfo 
+ 1287  adb logcat -v time | grep "ElinkR\|AndroidR"
+ 1288  adb logcat -v time | grep "ElinkR\|AndroidR|LPS"
+ 1289  adb logcat -v time | egrep "ElinkR|AndroidR|LPS"
+ 1290  adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1291  adb root
+ 1292  adb remount
+ 1293  adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1294  adb reboot 
+ 1295  ad
+ 1296  adb logcat -v time | egrep "ElinkR|AndroidR|LPS"
+ 1297  adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1298  adb root;adb remount; adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1299  adb reboot 
+ 1300  adb logcat -v time | egrep "ElinkR|AndroidR|LPS"
+ 1301  adb root;adb remount; adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1302  adb reboot 
+ 1303  adb logcat -v time | egrep "ElinkR|AndroidR|LPS"
+ 1304  adb shell ps | grep system
+ 1305  adb shell ps | grep system_server
+ 1306  adb logcat -v time | egrep "ElinkR|AndroidR|LPS"
+ 1307  xj ft 
+ 1308  adb logcat -v time | egrep "ElinkR|AndroidR|LPS"
+ 1309  adb root
+ 1310  adb remount
+ 1311  adb push /media/elink_temp/xujing/LPService.apk /system/priv-app/LPService/LPService.apk
+ 1312  adb shell rm -r /system/priv-app/LPService/oat 
+ 1313  adb reboot 
+ 1314  adb logcat -v time | egrep "ElinkR|AndroidR|LPS"
+ 1315  adb logcat -v time | egrep "ElinkR|AndroidR|LPS" > /media/elink_temp/ry/ElinkRecord.txt
+ 1316  cat /media/elink_temp/ry/ElinkRecord.txt 
+ 1317  adb logcat -v time | egrep "ElinkR|AndroidR|LPS" > /media/elink_temp/ry/ElinkRecord.txt
+ 1318  adb logcat -v time | egrep "ElinkR|AndroidR|LPS"
+ 1319  adb logcat -v time | egrep "ElinkR|AndroidR|LPS|onStart"
+ 1320  adb logcat -v time | egrep "ElinkR|AndroidR|LPS"
+ 1321  adb logcat -v time | egrep "onStartCommand"
+ 1322  adb logcat -v time | egrep "ElinkR|AndroidR|LPS|isShutdownBoot"
+ 1323  adb logcat -v time | egrep "ElinkR|AndroidR|LPS|isShutdownBoot" > /media/elink_temp/ry/ElinkRecord.txt 
+ 1324  adb logcat -v time | egrep "ElinkR|AndroidR|LPS|isShutdownBoot"| tee /media/elink_temp/ry/ElinkRecord.txt 
+ 1325  adb logcat -v time | egrep "ElinkR|AndroidR|LPS|isShutdownBoot"
+ 1326  adb logcat -v time | egrep "goc"
+ 1327  adb logcat -v time | egrep "ElinkR|AndroidR|LPS|isShutdownBoot"
+ 1328  adb logcat -v time | egrep "goc"
+ 1329  adb logcat -v time | egrep "BT/"
+ 1330  adb logcat -v time | egrep "goc"
+ 1331  adb logcat -v time | egrep "ElinkR|AndroidR|LPS|isShutdownBoot"
+ 1332  adb logcat -v time | egrep "goc"
+ 1333  adb logcat -v time | egrep "ElinkR|AndroidR|LPS|isShutdownBoot"
+ 1334  adb logcat -v time | egrep "goc"
+ 1335  adb logcat -v time | egrep "ElinkR|AndroidR|LPS|isShutdownBoot"
+ 1336  adb pull /sdcard/mtklog /media/elink_temp/xujing/mtklog_goc_20230327
+ 1337  rm /media/elink_temp/* -r
+ 1338  adb logcat -v time | egrep "ElinkR|AndroidR|LPS|isShutdownBoot"
+ 1339  ls o
+ 1340  git pull origin master 
+ 1341  ./mk 
+ 1342  ./mk -ud tx105b_4mc4ch_xbs_zs_1280x720_r32_2_p01_sn15_v01 new 
+ 1343  ./mk -ud tx105b_4mc4ch_xbs_zs_1280x720_r32_2_p01_sn15_v01 R
+ 1344  o ../
+ 1345  cd ../bird/
+ 1346  ./git pull 
+ 1347  git lg 
+ 1348  git show 70fca2c8 --name-only
+ 1349  adb push mmi/bird_app/xbs/DyLauncher/DyLauncher.apk /system/priv-app/DyLauncher/DyLauncher.apk
+ 1350  adb root
+ 1351  adb remount
+ 1352  adb push mmi/bird_app/xbs/DyLauncher/DyLauncher.apk /system/priv-app/DyLauncher/DyLauncher.apk
+ 1353  adb shell rm -r /system/priv-app/DyLauncher/oat 
+ 1354  adb reboot 
+ 1355  ./git pull 
+ 1356  cp /media/elink_temp/xujing/LPService.apk ./mmi/bird_app/bird/LPService/
+ 1357  git status 
+ 1358  git add ./
+ 1359  git commit -m "[MMI][电源管理休眠不清理蓝牙]"
+ 1360  git add ./
+ 1361  git commit -m "[MMI][电源管理休眠不清理蓝牙]"
+ 1362  git status 
+ 1363  cp /media/elink_temp/xujing/LPService.apk ./mmi/bird_app/bird/LPService/
+ 1364  git add ./
+ 1365  git commit -m "[MMI][电源管理休眠不清理蓝牙]"
+ 1366  ./git push 
+ 1367  git lg 
+ 1368  adb root 
+ 1369  adb remount
+ 1370  adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1371  adb shell rm -r  /system/priv-app/ElinkRecorder/oat 
+ 1372  adb reboot 
+ 1373  adb root
+ 1374  adb remount
+ 1375  adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1376  adb reboot 
+ 1377  adb root 
+ 1378  adb remount
+ 1379  adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1380  adb reboot 
+ 1381  adb root 
+ 1382  adb remount
+ 1383  adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1384  adb reboot 
+ 1385  adb root 
+ 1386  adb remount
+ 1387  adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1388  adb reboot 
+ 1389  adb root
+ 1390  adb remount
+ 1391  adb root
+ 1392  adb remount
+ 1393  adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1394  adb shell rm -r  /system/priv-app/ElinkRecorder/oat 
+ 1395  adb reboot 
+ 1396  adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1397  adb root
+ 1398  adb remount
+ 1399  adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1400  adb shell ps | grep elink
+ 1401  adb shell kill  9197
+ 1402  adb root
+ 1403  adb remount
+ 1404  adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1405  adb reboot 
+ 1406  adb root
+ 1407  adb remount
+ 1408  adb root
+ 1409  adb remount
+ 1410  adb push /media/elink_temp/ry/ElinkRecorder.apk /system/priv-app/ElinkRecorder/
+ 1411  adb reboot
+ 1412  git status 
+ 1413  scrcpy
+ 1414  ./git pull 
+ 1415  git lg 
+ 1416  ifconfig 
+ 1417  ./git pull 
+ 1418  sleep 600; ./git pull 
+ 1419  ./git pull 
+ 1420  git add ./
+ 1421  git commit -m "[MMI][rm p03 zs mk]"
+ 1422  ./git push 
+ 1423  git lg 
+ 1424  git reset --hard 945b6567
+ 1425  git add ./
+ 1426  git status 
+ 1427  git commit -m "[MMI][rm mk]"
+ 1428  ./git push 
+ 1429  git lg 
+ 1430  git lg 
+ 1431  ./git pull 
+ 1432  git status 
+ 1433  git checkout -f 
+ 1434  git status 
+ 1435  ./git pull 
+ 1436  git lg 
+ 1437  cd /media/elink_temp/xujing/mtklog_1615ACC问题/mobilelog/
+ 1438  xj aee
+ 1439  adb push /media/elink_temp/xujing/LPService.apk /system/priv-app/LPService/LPService.apk
+ 1440  adb  root
+ 1441  adb rmeount
+ 1442  adb remount
+ 1443  adb push /media/elink_temp/xujing/LPService.apk /system/priv-app/LPService/LPService.apk
+ 1444  adb shell rm -r /system/priv-app/LPService/oat 
+ 1445  adb reboot 
+ 1446  scrcpy
+ 1447  cat /media/elink_temp/xujing/logcat.txt | grep " E "
+ 1448  cat /media/elink_temp/xujing/logcat.txt | grep " E"
+ 1449  ./git pull l
+ 1450  ./git pull 
+ 1451  git lg 
+ 1452  adb push mmi/bird_app/xbs/XbsOta/can_app.bin /system/etc/
+ 1453  adb 
+ 1454  adb logcat -s OtaService
+ 1455  minicom
+ 1456  apt install minicom
+ 1457  minicom -s
+ 1458  minicom 
+ 1459  adb logcat -v time | grep E\/
+ 1460  adb shell ps | grep 556
+ 1461  xj kmsg
+ 1462  adb root\
+ 1463  adb root
+ 1464  xj kmsg
+ 1465  scrcpy
+ 1466  adb shell
+ 1467  adb root
+ 1468  adb remount
+ 1469  adb shell
+ 1470  xgrep CarTbox
+ 1471  xgrep "PM: suspend|CarTbox"
+ 1472  xgrep "PM: suspend|_HU"
+ 1473  xgrep  "ipo service sendBroadcastAndWait|ECARXMCU wakeup reaso|setUsbSwitch|sendACCBroadcast|stopShutAnimation|PM: suspend|mpu_to_mcu_wakeup|InputManager-JNI|MotoCabinStateMachine|enableBacklight|BootAnimattion|Shutdown broadcastandroid|AMCV-PowerManager"
+ 1474  adb root
+ 1475  adb remount
+ 1476  adb shell rm /sdcard/mtklog -r ;adb reboot 
+ 1477  cd ../../../
+ 1478  adb pull /sdcard/mtklog ./mtklog_2
+ 1479  adb shell rm /sdcard/mtklog -r ;adb reboot 
+ 1480  adb pull /sdcard/mtklog ./mtklog_3
+ 1481  cd mtklog_3/mobilelog/APLog_2023_0329_150210__9/
+ 1482  xgrep  "ipo service sendBroadcastAndWait|ECARXMCU wakeup reaso|setUsbSwitch|sendACCBroadcast|stopShutAnimation|PM: suspend|mpu_to_mcu_wakeup|InputManager-JNI|MotoCabinStateMachine|enableBacklight|BootAnimattion|Shutdown broadcastandroid|AMCV-PowerManager"
+ 1483  O ./kernel_log_2023_0329_150210.curf
+ 1484  XGREP "wake up"
+ 1485  adb shell rm /sdcard/mtklog -r ;adb reboot 
+ 1486  cd ../../../
+ 1487  adb pull /sdcard/mtklog ./mtklog_4
+ 1488  cd mtklog_4/mobilelog/APLog_2023_0329_153530__14/
+ 1489  xgrep  "ipo service sendBroadcastAndWait|ECARXMCU wakeup reaso|setUsbSwitch|sendACCBroadcast|stopShutAnimation|PM: suspend|mpu_to_mcu_wakeup|InputManager-JNI|MotoCabinStateMachine|enableBacklight|BootAnimattion|Shutdown broadcastandroid|AMCV-PowerManager"
+ 1490  ./git pull 
+ 1491  git lg 
+ 1492  git status 
+ 1493  cd ../
+ 1494  ./jetbrains-toolbox 
+ 1495  adb root
+ 1496  adb remount
+ 1497  adb root
+ 1498  adb remount
+ 1499  adb root
+ 1500  adb push /media/elink_temp/xujing/bootanimation.zip /system/media/
+ 1501  adb reboot \
+ 1502  adb reboot 
+ 1503  adb pull /sdcard/mtklog ./
+ 1504  adb root
+ 1505  adb remount
+ 1506  adb pull /sdcard/mtklog ./
+ 1507  adb shell dumpsys meminfo 
+ 1508  adb shell dumpsys meminfo 
+ 1509  adb shell dumpsys meminfo > meminfo.txt
+ 1510  adb shell cat /proc/slabinfo > slabinfo.txt
+ 1511  adb pull /sdcard/mtklog ./mtklog_20230329
+ 1512  studio 
+ 1513  dpkg bcompare-4.2.6.23150_amd64.deb 
+ 1514  dpkg -i  bcompare-4.2.6.23150_amd64.deb 
+ 1515  dpkg -i libpng12-0_1.2.54-1ubuntu1.1+1~ppa0~focal_amd64.deb 
+ 1516  apt install libpng12-0_1.2.54-1ubuntu1.1+1~ppa0~focal_amd64.deb 
+ 1517  apt install ./libpng12-0_1.2.54-1ubuntu1.1+1~ppa0~focal_amd64.deb 
+ 1518  apt install libc6
+ 1519  apt --fix-broken install
+ 1520  apt install libc6
+ 1521  apt install ./libpng12-0_1.2.54-1ubuntu1.1+1~ppa0~focal_amd64.deb 
+ 1522  dpkg -i 有道云笔记-7.2.5-amd64-web.deb 
+ 1523  add-apt-repository ppa:linuxuprising/libpng12
+ 1524  apt update
+ 1525  apt install libpng12-0
+ 1526  add-apt-repository ppa:linuxuprising/libpng12
+ 1527  apt update 
+ 1528  ping 185.125.190.52
+ 1529  gedit /root/模板/Readme.txt
+ 1530  apt install scrcpy
+ 1531  snap install scrcpy"
+ 1532  snap install scrcpy
+ 1533  scrcpy
+ 1534  adb shell dumpsys meminfo 
+ 1535  adb root
+ 1536  adb rmeount
+ 1537  adb remount
+ 1538  ./git pull 
+ 1539  cd mmi/sdudio_code/pressure_test/
+ 1540  ls 
+ 1541  cat memory_de.sh 
+ 1542  adb push memory_de.sh /system/bin
+ 1543  adb shell memory_de.sh
+ 1544  git lg 
+ 1545  cd ../alps/
+ 1546  ls ../
+ 1547  ./mk -ud tx105b_4mc4ch_xbs_zs_1280x720_r32_2_p01_sn15_v01 new 
+ 1548  ./mk -ud tx105b_4mc4ch_xbs_zs_1280x720_r32_2_p01_sn15_v01 R
+ 1549  ./git pull 
+ 1550  cat sys_log_2023_0329_145943.curf | grep SystemServer
+ 1551  xgrep log
+ 1552  xgrep log| grep .xml
+ 1553  xgrep log| grep \.xml
+ 1554  xgrep log| grep ".xml"
+ 1555  xgrep log| grep "\\.xml"
+ 1556  o ./ecarxICp1_64/appmanager/app_ecarx_policy.xml
+ 1557  xgrep mtklog-config-bsp-eng
+ 1558  o ./mediatek/common/device.mk
+ 1559  xgrep MTK_BASIC_PACKAGE
+ 1560  cd ../bionic/
+ 1561  cd ../../bird/
+ 1562  git status 
+ 1563  ./git pull 
+ 1564  git diff 
+ 1565  git config pull.rebase false 
+ 1566  ./git pull 
+ 1567  git add ./
+ 1568  git commit -m "[MMI][userdebug版本默认关闭mtklog]"
+ 1569  ./git push 
+ 1570  git lg 
+ 1571  git status 
+ 1572  git add ./
+ 1573  ./git pull 
+ 1574  git commit -m "[MMI][更新debug脚本]"
+ 1575  ./git push 
+ 1576  git show 
+ 1577  cat proc_meminfo.txt | grep Free
+ 1578  cat proc_meminfo.txt | grep Av
+ 1579  ./git pull 
+ 1580  git status 
+ 1581  git diff 
+ 1582  git checkout -f 
+ 1583  ./git pull 
+ 1584  git lg 
+ 1585  git status 
+ 1586  ./git pull 
+ 1587  xj aee
+ 1588  git lg \
+ 1589  ls 
+ 1590  cat dumpsys_meminfo.txt | grep system
+ 1591  cat dumpsys_meminfo.txt | grep systemui
+ 1592  cat dumpsys_meminfo.txt | grep "system "
+ 1593  cat dumpsys_meminfo.txt | grep "syste "
+ 1594  cat dumpsys_meminfo.txt | grep "ark"
+ 1595  cat dumpsys_meminfo.txt | grep "arka"
+ 1596  ls 
+ 1597  cat proc_slabinfo.txt | grep km
+ 1598  cat proc_slabinfo.txt | grep kmalloc-
+ 1599  cat proc_slabinfo.txt | grep kmalloc-64
+ 1600  cat proc_slabinfo.txt | grep kmalloc-128
+ 1601  cat proc_slabinfo.txt | grep kmalloc-192
+ 1602  cat proc_slabinfo.txt | grep kmalloc-256
+ 1603  cat proc_slabinfo.txt | grep kmalloc-512
+ 1604  cat proc_slabinfo.txt | grep kmalloc-1024
+ 1605  cat proc_slabinfo.txt | grep kmalloc-2048
+ 1606  cat proc_slabinfo.txt | grep kmalloc-5396
+ 1607  cat proc_slabinfo.txt | grep kmalloc-4096
+ 1608  cat proc_slabinfo.txt | grep kmalloc-8
+ 1609  cat dumpsys_meminfo.txt | grep "kernel"
+ 1610  cat dumpsys_meminfo.txt 
+ 1611  cat dumpsys_meminfo.txt | grep "Total PSS by process" -n 5
+ 1612  cat dumpsys_meminfo.txt | grep "Total PSS by process" -c 5
+ 1613  grep --help
+ 1614  cat dumpsys_meminfo.txt | grep "Total PSS by process" -m 5
+ 1615  xj edit 
+ 1616  cat dumpsys_meminfo.txt | grep "Total PSS by process" -C 5
+ 1617  cat dumpsys_meminfo.txt | grep "Total PSS by process" -C 6
+ 1618  cat dumpsys_meminfo.txt | grep "Total PSS by process" -A 6
+ 1619  cat dumpsys_meminfo.txt | grep "Total PSS by process" -A 5
+ 1620  cat proc_slabinfo.txt | grep kmalloc-64
+ 1621  cat proc_slabinfo.txt | grep "^kmalloc-64"
+ 1622  o proc_slabinfo.txt 
+ 1623  cat ../memory_de.sh 
+ 1624  cat proc_slabinfo.txt | grep "^kmalloc-64"
+ 1625  cat dumpsys_meminfo.txt | grep To
+ 1626  cat dumpsys_meminfo.txt | grep Used
+ 1627  sleep a
+ 1628  sleep 1
+ 1629  gedit ../alps/vendor/mediatek/proprietary/hardware/connectivity/combo_tool/init_connectivity.rc
+ 1630  git lg | grep 开机
+ 1631  q
+ 1632  git show 8d69762a --name-only
+ 1633  o alps/vendor/mediatek/proprietary/hardware/connectivity/combo_tool/init_connectivity.rc
+ 1634  cd ../
+ 1635  gedit alps/vendor/mediatek/proprietary/hardware/connectivity/combo_tool/init_connectivity.rc
+ 1636  xgrep HU_BACKLIGHT
+ 1637  O ./src/main/java/aurora/moto/brain/app/ServiceBootReceiver.java
+ 1638  XGREP EVENT_ACC_BRIGHTNESS_UPDATE
+ 1639  o ./src/main/java/aurora/moto/brain/transaction/MotoCabinDirector.java
+ 1640  cat sys_log_2023_0329_153530.curf | grep SystemServer
+ 1641  bcompare 
+ 1642  apt install samba
+ 1643  smbpasswd -a root
+ 1644  /etc/init.d/smbd restart
+ 1645  apt install xrdp
+ 1646  ifconfig 
+ 1647  bcompare 
+ 1648  cat kernel_log_6__2023_0329_153530 | grep -v "construct_one_frame"
+ 1649  cat kernel_log_6__2023_0329_153530 | egrep -v "construct_one_frame|mcu->mpu"
+ 1650  cat kernel_log_6__2023_0329_153530 | egrep -v "construct_one_frame|mcu->mpu" > ../../../../4_600m.txt
+ 1651  cd ../../../../mtklog_2/mobilelog/APLog_2023_0329_145943__8/
+ 1652  cd boot__normal/
+ 1653  cat kernel_log_6__2023_0329_145943 |  egrep -v "construct_one_frame|mcu->mpu"
+ 1654  cat kernel_log_6__2023_0329_145943 |  egrep -v "construct_one_frame|mcu->mpu" > ../../../../4_100m.txt 
+ 1655  sshd
+ 1656  apt install openssh-server
+ 1657  xj mount
+ 1658  ps | grep sshd
+ 1659  sshd
+ 1660  sshd /media/root/WorkSpace/
+ 1661  apt install openssh-server
+ 1662  sudo apt-get install vnc4server
+ 1663  sudo service xrdp restart
+ 1664  ifconfig 
+ 1665  ./mk 
+ 1666  ./git pull 
+ 1667  cd ../alps/
+ 1668  ./clear 
+ 1669  cd ./
+ 1670  ./clear ; ./mk -ud tx105b_4mc4ch_xbs_zs_1280x720_r32_2_p01_sn15_v01 new
+ 1671  xj aee
+ 1672  ./git pull 
+ 1673  cat dumpsys_meminfo.txt | grep Use
+ 1674  cat proc_slabinfo.txt | grep "^k"
+ 1675  cat proc_slabinfo.txt | grep "^kmalloc-64"
+ 1676  cat dumpsys_meminfo.txt | grep Use
+ 1677  cat dumpsys_meminfo.txt | egrep "Use|CST"
+ 1678  cd ./bird/
+ 1679  git remote -v 
+ 1680  cd ../
+ 1681  mkdir bird_ext
+ 1682  cd bird_ext/
+ 1683  git clone git@192.168.50.179:BIRD_VEHICLE_P0MP1_K39TV1_BSP_MT6762_STANDARD/bird_standard
+ 1684  ping 192.168.50.179
+ 1685  ssh git@172.20.101.179| grep 6762
+ 1686  ssh git@172.20.101.179
+ 1687  ssh git@192.168.50.179
+ 1688  ssh git@192.168.50.179| grep 6762
+ 1689  git clone git@192.168.50.179:BIRD_VEHICLE_P0MP1_K39TV1_BSP_MT6762_EXT/bird_standard
+ 1690  xj mount
+ 1691  tree
+ 1692  apt  install tree
+ 1693  tree
+ 1694  xj aee
+ 1695  grep systemui
+ 1696  xgrep 1159 | grep 17:12
+ 1697  xgrep 1159 | grep 17:1
+ 1698  xgrep low_
+ 1699  cat events_log_2023_0330_164800.curf | grep died
+ 1700  xgrep disconnect 
+ 1701  xgrep disconnect | grep 1159
+ 1702  git remote -v 
+ 1703  cd ../
+ 1704  git clone git@192.168.50.179:BIRD_ECARX_P0MP13_E02_EVB_EXT/bird_dongjun
+ 1705  ./git pull 
+ 1706  cd bird
+ 1707  ./git pull 
+ 1708  git status 
+ 1709  ls -s mk script/make_ota.sh 
+ 1710  ls -s script/make_ota.sh  ./mk
+ 1711  ln -s ./mk script/make_ota.sh  
+ 1712  ln -s  script/make_ota.sh   ./mk 
+ 1713  git status 
+ 1714  git add ./
+ 1715  git commit -m "[MMI][ota脚本适配]"
+ 1716  git lg 
+ 1717  ./mk 
+ 1718  ./mk -d
+ 1719  ./mk e02_5mc7ch_qjmt_1280x768_r32_4_p01_sn15_v02_c SW0MICS001H0916
+ 1720  ./mk -d
+ 1721  ./mk -d e02_5mc7ch_qjmt_1280x768_r32_4_p01_sn15_v02_c SW0MICS001H0916
+ 1722  ./mk e02_5mc7ch_qjmt_1280x768_r32_4_p01_sn15_v02_c SW0MICS001H0916
+ 1723  o output/e02_5mc7ch_qjmt_1280x768_r32_4_p01_sn15_v02_c/full_mpu_update_SW0MICS001H0916__2023-03-31T14-27-24Z.zip
+ 1724  ./mk e02_5mc7ch_qjmt_1280x768_r32_4_p01_sn15_v02_c SW0MICS001H0916
+ 1725  o output/e02_5mc7ch_qjmt_1280x768_r32_4_p01_sn15_v02_c/full_mpu_update_SW0MICS001H0916__2023-03-31T14-27-24Z.zip
+ 1726  md5sum mk
+ 1727  md5sum mk | egrep -o "^[0-9][a-z][A-Z]+"
+ 1728  md5sum mk | egrep -o "^[0-9][a-z][A-Z].*"
+ 1729  md5sum mk | egrep -o "^[0-9][a-z][A-Z].*+"
+ 1730  md5sum mk | egrep -o "^[0-9][a-z][A-Z].+"
+ 1731  md5sum mk | egrep -o "^[0-9][a-z][A-Z]"
+ 1732  md5sum mk | egrep -o "^[0-9][a-z][A-Z]*"
+ 1733  md5sum mk | egrep -o "^[0-9][a-z][A-Z]+"
+ 1734  md5sum mk 
+ 1735  md5sum --help
+ 1736  md5sum -t mk 
+ 1737  ./mk e02_5mc7ch_qjmt_1280x768_r32_4_p01_sn15_v02_c SW0MICS001H0916
+ 1738  ./mk e02_5mc7ch_qjmt_1280x768_r32_4_p01_sn15_v02_c SW0MICS001H0916 SW0MICS001H0916
+ 1739  git status 
+ 1740  ./mk e02_5mc7ch_qjmt_1280x768_r32_4_p01_sn15_v02_c SW0MICS001H0916 SW0MICS001H0916
+ 1741  ls ../alps/out/host/linux-x86/framework/signapk.jar
+ 1742  cd ../alps/
+ 1743  find . -name signapk.jar
+ 1744  cd ../ota/
+ 1745  ./mk 
+ 1746  git status 
+ 1747  git add README.txt 
+ 1748  git add script/
+ 1749  git commit --amend 
+ 1750  git show 
+ 1751  git show --name-only
+ 1752  ln -s script/git_wrap.sh ./git 
+ 1753  git add ./
+ 1754  git status 
+ 1755  git add ./git 
+ 1756  git add script/
+ 1757  git commit --amend --no-edit 
+ 1758  git show --name-only
+ 1759  ./git push 
+ 1760  git status 
+ 1761  git add README.txt 
+ 1762  git commit --amend --no-edit 
+ 1763  cat git 
+ 1764  git push origin HEAD:master -f
+ 1765  git lg 
+ 1766  bcompare 
+ 1767  git lg 
+ 1768  ./git pull 
+ 1769  git lg 
+ 1770  ssh root@192.168.50.199
+ 1771  tree
+ 1772  ./git pull 
+ 1773  git status 
+ 1774  git add ./
+ 1775  git commit -m "[MMI][更新蓝牙协议栈，优化mk，xbs_zs打开莱特]"
+ 1776  ./git show 
+ 1777  git show 
+ 1778  ./git push 
+ 1779  git lg 
+ 1780  git show --name-only
+ 1781  git add ./
+ 1782  git commit -m "[MMI][XBS_ZS默认关闭莱特]"
+ 1783  git show 
+ 1784  ./git push 
+ 1785  ./git pull 
+ 1786  git lg 
+ 1787  xgrep WAKEUPSRC_BATTERY
+ 1788  xgrep WAKEUPSRC_UNKNOW
+ 1789  xgrep EVENT_ACC_BRIGHTNESS_UPDATE
+ 1790  o ./packages/AuroraMotoCabinBrain/app/src/main/java/aurora/moto/brain/transaction/MotoCabinDirector.java
+ 1791  ./git pull 
+ 1792  cd ../alps/
+ 1793  ./mk 
+ 1794  ./mk -ud e02_5mc7ch_qjmt_1280x768_r32_4_p01_sn15_v02_c R
+ 1795  ./flash_tool 
+ 1796  xj ft 
+ 1797  ./flash_tool 
+ 1798  xj ft 
+ 1799  lsusb
+ 1800  gedit /etc/udev/rules.d/53-android.rules
+ 1801  cat /root/.android/adb_usb.ini
+ 1802  gedit /etc/udev/rules.d/53-MTKinc.rules &
+ 1803  gedit /etc/udev/rules.d/53-android.rules 
+ 1804  　　sudo chmod a+rx /etc/udev/rules.d/53-android.rules
+ 1805  chmod a+rx /etc/udev/rules.d/53-android.rules
+ 1806  chmod a+rx /etc/udev/rules.d/53-MTKinc.rules
+ 1807  /etc/init.d/udev restart
+ 1808  xj ft 
+ 1809  lsusb
+ 1810  apt remove modemmanager 
+ 1811  /etc/init.d/udev restart
+ 1812  cd ../alps/
+ 1813  source  build/envsetup.sh 
+ 1814  cd kernel-4.4/
+ 1815  cgrep CONFIG_PINCTRL_ECARX_IPO_DEBUG
+ 1816  adb shell getprop persist.sys.senstivelight_delay
+ 1817  adb root
+ 1818  adb shell getprop persist.sys.senstivelight_delay
+ 1819  adb root
+ 1820  adb remount
+ 1821  adb push mcu_update.zip /system/etc/
+ 1822  adb shell ls /system/etc/
+ 1823  adb shell ls /system/etc/| grep mcu
+ 1824  ./create_mcupackage.sh 
+ 1825  cat events_log_3__2023_0331_141143 | grep onresume
+ 1826  cat events_log_3__2023_0331_141143 | grep on_resume
+ 1827  adb logcat -b events | grep on_reume
+ 1828  adb logcat -b events | grep on_resume
+ 1829  xgrep low_
+ 1830  adb logcat -b events | grep am_
+ 1831  xj ft 
+ 1832  cd /media/elink_log/钱江摩托项目LOG信息/主菜单图标消失/mtklog_0331
+ 1833  xj aee
+ 1834  cd mobilelog/APLog_2022_0101_000004__6/
+ 1835  xgrep 14:10
+ 1836  xgrep QJL
+ 1837  xgrep QJL_
+ 1838  cat events_log_3__2023_0331_141143 | grep am_
+ 1839  cat events_log_3__2023_0331_141143 | egrep "am_|LIFECYCLER_RESUME_ACTIVITY"
+ 1840  xgrep "QJL_|AppListFragment"
+ 1841  xgrep "AppListFragment"
+ 1842  cat events_log_3__2023_0331_141143 | grep died
+ 1843  ./git pull 
+ 1844  git status 
+ 1845  git diff 
+ 1846  git status 
+ 1847  cd ../alps/ 
+ 1848  git add ./
+ 1849  git commit -m "[MMI][壁纸替换为纯白色]"
+ 1850  cd 
+ 1851  cd -
+ 1852  cd ../
+ 1853  cd bird/
+ 1854  git lg 
+ 1855  git status 
+ 1856  git add ./
+ 1857  git commit -m "[MMI][壁纸替换为纯白色]"
+ 1858  cd ../alps/
+ 1859  git lg 
+ 1860  git status 
+ 1861  git show --name-only\
+ 1862  git show --name-only
+ 1863  git reset --hard 48010aeb7e
+ 1864  git lg 
+ 1865  ./mk 
+ 1866  ./mk -ud e02_5mc7ch_qjmt_1280x768_r32_4_p01_sn15_v02_c new 
+ 1867  ./mk -ud e02_5mc7ch_qjmt_1280x768_r32_4_p01_sn15_v02_c R
+ 1868  ./git pull 
+ 1869  cd ../bird/
+ 1870  ./git pull 
+ 1871  ./git push 
+ 1872  git lg 
+ 1873  git status 
+ 1874  git add ./
+ 1875  git commit -m "[MMI][同步客户systemui]"
+ 1876  ./git push 
+ 1877  adb root
+ 1878  ./git pull 
+ 1879  git status 
+ 1880  git diff 
+ 1881  xj se
+ 1882  adb pull /sdcard/mtklog ../mtklog_lp_check_20230403
+ 1883  cd ../mtklog_lp_check_20230403/mobilelog/APLog_2022_0103_053342__1/
+ 1884  xj aee
+ 1885  xgrep  "ipo service sendBroadcastAndWait|ECARXMCU wakeup reaso|setUsbSwitch|sendACCBroadcast|stopShutAnimation|PM: suspend|mpu_to_mcu_wakeup|InputManager-JNI|MotoCabinStateMachine|enableBacklight|BootAnimattion|Shutdown broadcastandroid|AMCV-PowerManager"
+ 1886  xgrep "wake up"
+ 1887  cd ../../../bird
+ 1888  git status 
+ 1889  ./git pull 
+ 1890  git add alps/dwj/aurora/framework/base/packages/AuroraMotoCabinBrain/app/src/main/java/aurora/moto/brain/transaction/MotoCabinDirector.java
+ 1891  git add alps/ecarx/MCU/MCUUpgradePackage_generate/image/NoHerat_V.s19
+ 1892  mv alps/ecarx/MCU/IHU503G/mcu_update.zip alps/ecarx/MCU/IHU503G/mcu_update_noheart.zip
+ 1893  mv alps/ecarx/MCU/IHU503G/mcu_update_noheart.zip alps/ecarx/MCU/IHU503G/mcu_update_noheart_IP940.zip
+ 1894  git commit -m "[MMI][备份不检测心跳测试MCU固件，过滤09未知唤醒源]"
+ 1895  ./git push 
+ 1896  git show --name-only
+ 1897  git add alps/ecarx/MCU/IHU503G/mcu_update_noheart_IP940.zip
+ 1898  git commit -m "[MMI][备份不检测心跳测试MCU固件mcu_update_noheart_IP940.zip]"
+ 1899  git show --name-only
+ 1900  ./git push 
+ 1901  git show 
+ 1902  mkdir BIRD_VEHICLE_T0_8781; cd BIRD_VEHICLE_T0_8781; repo init -u git@192.168.50.199:BIRD_VEHICLE_T0_8781/manifest.git 
+ 1903  repo sync -j4
+ 1904  zpool 
+ 1905  zpool list
+ 1906  zfs 
+ 1907  zfs list
+ 1908  zpool status
+ 1909  zpool list
+ 1910  mkdir /media/zfs_pool
+ 1911  zfs set mountpoint=/media/zfs_pool pool
+ 1912  zfs import  -d /dev/nvme0n1p1
+ 1913  zfs import  -d pool
+ 1914  zpool  import pool
+ 1915  zpool  import  -f pool
+ 1916  zpool  import  -f
+ 1917  zfs set mountpoint=/media/zfs_pool pool
+ 1918  zpool status
+ 1919  zpool  import  -f
+ 1920  zpool  import  -f pool
+ 1921  zpool  import  -F pool
+ 1922  zpool  import  -f
+ 1923  zpool status
+ 1924  zpool status -v
+ 1925  zpool  import  pool
+ 1926  zpool import -f pool
+ 1927  zpool import -m pool
+ 1928  zpool import -m -f pool
+ 1929  zfs mount -a
+ 1930  zpool import -m -f pool
+ 1931  zpool status 
+ 1932  zpool import -m -f -o pool
+ 1933  zpool status 
+ 1934  zpool import -m -f -o pool
+ 1935  zpool import 
+ 1936  zpool import -f
+ 1937  zpool import -f pool
+ 1938  zpool import -F pool
+ 1939  zpool import -F -Fpool
+ 1940  zpool import -F -f pool
+ 1941  zpool import -f pool
+ 1942  zpool status pool
+ 1943  sudo zpool import -F -d /dev/disk/by-id
+ 1944  sudo zpool import -F -d /dev/disk/by-id 17518121994780248298
+ 1945  sudo zpool import -F -f -d /dev/disk/by-id 17518121994780248298
+ 1946  sudo zpool import -f -d /dev/disk/by-id 17518121994780248298
+ 1947  sudo zpool import -f -d /dev/disk/by-id pool
+ 1948  sudo zpool import -F -d /dev/disk/by-id pool
+ 1949  zpool status 
+ 1950  zpool import -fFmX pool
+ 1951  zpool create pool nvme0n1
+ 1952  zpool status
+ 1953  zfs set mountpoint=/media/zfs_pool pool
+ 1954  mkdir /media/zfs_1T_pool
+ 1955  zpool create zfs_1T_pool nvme0n1
+ 1956  zpool remove pool  nvme0n1
+ 1957  zpool destroy -f pool
+ 1958  zpool remove pool  nvme0n1
+ 1959  zpool status 
+ 1960  zpool create zfs_1T_pool nvme0n1
+ 1961  zfs set mountpoint=/media/zfs_1T_pool zfs_1T_pool
+ 1962  rm -r /media/zfs_pool/ -r
+ 1963  zfs set dedup=on zfs_1T_pool
+ 1964  zfs get all | grep dedup
+ 1965  zpool list
+ 1966  xj mount
+ 1967  git status 
+ 1968  git lg 
+ 1969  repo init -u git@192.168.50.199:BIRD_ECARX_P0MP13_E02_EVB/manifest.git
+ 1970  repo sync 
+ 1971  repo init -u git@192.168.50.199:BIRD_VEHICLE_P0MP1_K39TV1_BSP_MT6762_STANDARD/manifest_standard.git
+ 1972  repo sync -j8
+ 1973  ssh root@192.168.50.199
+ 1974  cd BIRD_VEHICLE_T0_8781/
+ 1975  repo init -u git@192.168.50.199:BIRD_VEHICLE_T0_8781/manifest.git
+ 1976  repo sync -j 8
+ 1977  repo sync -j8
+ 1978  ls 
+ 1979  cd system/
+ 1980  sudo apt-get install libxml-simple-perl
+ 1981  sudo apt-get install libswitch-perl
+ 1982  sudo apt-get install libfile-copy-recursive-perl
+ 1983  cd ../vendor/
+ 1984  ./mk 
+ 1985  ./mk -ud tx205a_mtk_release_demo new 
+ 1986  ssh git@192.168.50.193
+ 1987  repo init -u git@192.168.50.199:BIRD_ECARX_P0MP13_E02_EVB/manifest.git
+ 1988  repo sync -j8
+ 1989  mv /root/.ssh/ /root/xj_ssh
+ 1990  mv /root/ssh_aman/ /root/.ssh
+ 1991  ls -l /root/xj_ssh/
+ 1992  ls -l /root/.ssh/
+ 1993  chmod 600 /root/.ssh/id*
+ 1994  ls -l /root/.ssh/
+ 1995  chmod 644 /root/.ssh/known_hosts 
+ 1996  ls -l /root/.ssh/
+ 1997  xgrep alps
+ 1998  o ./custom/clone_mmi.sh
+ 1999  xgrep alps
+ 2000  o ./core/clone.sh
+ 2001  git lg 
+ 2002  history 
+ 2003  cd /media/elink_temp/pengyujie/aaaaa/
+ 2004  cd mobilelog/
+ 2005  xgrep 09:02
+ 2006  xgrep 09:02:
+ 2007  xgrep 09:00
+ 2008  xgrep 09:00:
+ 2009  xgrep " 09:00:"
+ 2010  cd APLog_2023_0328_180510__9/
+ 2011  xgrep on_resume
+ 2012  cat events_log_2023_0328_180510.curf | grep am_died
+ 2013  cat events_log_2023_0328_180510.curf | grep died
+ 2014  cat events_log_2023_0328_180510.curf | grep start | grep com.qj.car.qjlauncher
+ 2015  cat events_log_2023_0328_180510.curf | grep 22:55:39
+ 2016  xgrep touch_test
+ 2017  xgrep touch_
+ 2018  xj aee
+ 2019  xgrep low_
+ 2020  cat events_log_2023_0328_180510.curf | egrep "low_|died"
+ 2021  cat kernel_log_*|grep  lmk
+ 2022  cat kernel_log_*|grep kill
+ 2023  cat kernel_log_*|grep lowmemorykiller
+ 2024  cat events_log_2023_0328_180510.curf 
+ 2025  cat last_kmsg 
+ 2026  cat last_AndroidLog 
+ 2027  cat events_log_2023_0328_180510.curf | egrep "low_|died"
+ 2028  com.qj.car.qjlauncher
+ 2029  cat events_log_2023_0328_180510.curf | grep on_re
+ 2030  cat events_log_2023_0328_180510.curf | grep died
+ 2031  cat events_log_2023_0328_180510.curf | grep am_
+ 2032  adb shell ps | grep lau
+ 2033  adb shell ps | grep la
+ 2034* adb shell p
+ 2035  adb shell ps | grep la
+ 2036  adb shell kill 1771
+ 2037  adb root
+ 2038  adb remount
+ 2039  adb shell kill 1771
+ 2040  history 
+ 2041  adb shell ps | grep lau
+ 2042  adb shell kill  9198
+ 2043  cat sys_log_2023_0329_061107.curf | grep Acitivity
+ 2044  cat sys_log_2023_0329_061107.curf | grep Activi
+ 2045  adb shell ps | grep musi
+ 2046  adb shell ps | grep blu
+ 2047  adb logcat -b events | grep am_
+ 2048  adb shell ps | grep com.ecarx.bluetooth
+ 2049  adb shell kill  1669
+ 2050  adb shell ps | grep com.ecarx.bluetooth
+ 2051  adb logcat -b events | grep am_
+ 2052  adb logcat -b events | egrep "am_proc_died|low_"
+ 2053  cat events_log_2023_0328_180510.curf | egrep "am_proc_died|low_"
+ 2054  adb shell dumpsys meminfo
+ 2055  history  > /media/elink_temp/pengyujie/history
