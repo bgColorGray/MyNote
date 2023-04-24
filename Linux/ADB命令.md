@@ -104,3 +104,13 @@ cd /intel_pool/Project/EVB/bird/mmi/sdudio_code/swiftp-master/app/fdroid_free/de
 mv ./app-fdroid_free-debug.apk FTPServer.apk;adb root;adb remount; adb push ./FTPServer.apk /system/priv-app/FTPServer/;adb reboot;adb logcat -G 4m;
 ```
 
+
+
+```
+rm -r ./dwj/QjLauncher2/;cp -r ../bird/mmi/sdudio_code/QjLauncher2/ ./dwj/;cp -r ../bird/mmi/sdudio_code/dial* ./dwj/;./mk -ud e02_5mc7ch_qjmt_1280x768_r32_4_p01_sn15_v02_c_350_2d mm ./dwj/QjLauncher2/;cp out/target/product/ecarxICp1_64/system/priv-app/QJLauncher2/QJLauncher2.apk ../bird/alps/dwj/;rm -r ./dwj/QjLauncher2/;rm -r ./dwj/dial*
+```
+
+```
+rm -r ./dwj/InstrumentCoreService2/;cp -r ../bird/mmi/sdudio_code/InstrumentCoreService2/ ./dwj/;cp -r ../bird/mmi/sdudio_code/dial* ./dwj/;./mk -ud e02_5mc7ch_qjmt_1280x768_r32_4_p01_sn15_v02_c_350_2d mm ./dwj/InstrumentCoreService2/;cp out/target/product/ecarxICp1_64/system/priv-app/InstrumentCoreService2/InstrumentCoreService2.apk ../bird/alps/dwj/;rm -r ./dwj/InstrumentCoreService2/;rm -r ./dwj/dial*
+```
+

@@ -108,3 +108,4 @@ echo "123" | sudo zfs snapshot pool/home@"$now"
 ``` 纯文本
 zfs list -t snapshot
 ```
+
