@@ -8,22 +8,20 @@ KVM（Kernel-based Virtual Machine）是一种开源的虚拟化技术，允许�
 
 1. 确认您的处理器支持硬件虚拟化。在绝大多数情况下，Intel处理器支持VT-x技术，AMD处理器支持AMD-V技术。可以在Linux命令行输入以下命令来检查处理器是否支持虚拟化：
 
-   ```
-   bashCopy code
+   ```bash
    egrep -c '(vmx|svm)' /proc/cpuinfo
    ```
-
+   
    如果输出的数字大于0，表示您的处理器支持虚拟化。
-
+   
 2. 确认您的Linux内核已启用KVM。在Linux命令行输入以下命令：
 
    ```
-   perlCopy code
    lsmod | grep kvm
    ```
-
+   
    如果输出有"kvm"和"kvm_intel"（或"kvm_amd"），表示内核已启用KVM。
-
+   
 3. 安装KVM和相关工具。在Linux命令行输入以下命令：
 
    ```
@@ -36,12 +34,11 @@ KVM（Kernel-based Virtual Machine）是一种开源的虚拟化技术，允许�
 4. 添加当前用户到libvirtd组。在Linux命令行输入以下命令：
 
    ```
-   bashCopy code
    sudo adduser `id -un` libvirtd
    ```
-
+   
    这将把当前用户添加到libvirtd用户组，以便您可以使用libvirt管理虚拟机。
-
+   
 5. 重启Linux系统。这可以确保新安装的KVM组件正确启动并运行。
 
 安装完成后，您可以使用virt-manager或virsh等工具创建和管理虚拟机。
