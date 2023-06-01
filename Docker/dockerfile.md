@@ -31,7 +31,7 @@ Ubuntu 20.04服务器编译环境
 
 ```dockerfile
 # 使用基础镜像
-FROM ubuntu:latest
+FROM ubuntu:20.04
 
 # 安装OpenSSH服务器和sudo工具
 RUN apt-get update && apt-get install -y openssh-server sudo bison build-essential curl flex g++-multilib gcc-multilib gnupg gperf lib32z-dev lib32z1 libc6-dev-i386 libgl1-mesa-dev libncurses5 lib32ncurses5-dev libssl-dev libx11-dev libxml2-utils m4 unzip x11proto-core-dev xsltproc zip zlib1g-dev bsdmainutils cgpt libswitch-perl bc rsync xxd git-core parallel python openjdk-8-jdk
