@@ -5,7 +5,6 @@
 ```bash
 sudo apt install docker.io
 #将用户添加到组
-sudo groupadd docker
 sudo usermod -aG docker <enter_username>
 sudo reboot
 #测试docker是否可用

@@ -13,5 +13,3 @@ docker run -it -v <本地代码路径>:<容器内代码路径> c2c2c80f2774
 #示例 docker run -it -v /intel_pool/Project:/Project c2c2c80f2774
 
 ```
-
-800-7B语音支持手把/坐垫加热
