@@ -27,32 +27,24 @@ FROM ubuntu:18.04
 RUN apt-get update && apt-get install -y bison build-essential curl flex g++-multilib gcc-multilib gnupg gperf lib32z-dev lib32z1 libc6-dev-i386 libgl1-mesa-dev libncurses5 lib32ncurses5-dev libssl-dev libx11-dev libxml2-utils m4 unzip x11proto-core-dev xsltproc zip zlib1g-dev bsdmainutils cgpt libswitch-perl bc rsync xxd git-core parallel python openjdk-8-jdk
 ```
 
+
+
+```
+FROM ubuntu:20.04
+RUN apt-get update && apt-get install -y bison build-essential curl flex g++-multilib gcc-multilib gnupg gperf lib32z-dev lib32z1 libc6-dev-i386 libgl1-mesa-dev libncurses5 lib32ncurses5-dev libssl-dev libx11-dev libxml2-utils m4 unzip x11proto-core-dev xsltproc zip zlib1g-dev bsdmainutils cgpt libswitch-perl bc rsync xxd git-core parallel python openjdk-8-jdk
+```
+
+
 Ubuntu 20.04服务器编译环境
 
 ```dockerfile
-# 使用基础镜像
 FROM ubuntu:20.04
-
-# 安装OpenSSH服务器和sudo工具
-RUN apt-get update && apt-get install -y openssh-server sudo bison build-essential curl flex g++-multilib gcc-multilib gnupg gperf lib32z-dev lib32z1 libc6-dev-i386 libgl1-mesa-dev libncurses5 lib32ncurses5-dev libssl-dev libx11-dev libxml2-utils m4 unzip x11proto-core-dev xsltproc zip zlib1g-dev bsdmainutils cgpt libswitch-perl bc rsync xxd git-core parallel python openjdk-8-jdk
-
-# 创建一个名为sshd的用户组
-RUN groupadd -r sshd
-
-# 创建一个名为sshd的用户，并将其添加到sshd用户组
-RUN useradd -r -g sshd -d /var/run/sshd -s /usr/sbin/nologin -c "sshd user" sshd
-
-# 创建一个目录用于存储sshd的密钥
-RUN mkdir /var/run/sshd
-
-# 设置root用户的密码为123456
-RUN echo 'root:123456' | chpasswd
-
-# 允许root用户远程登录
-RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
-
-# 在容器启动时运行sshd服务
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y openssh-server bison build-essential curl flex g++-multilib gcc-multilib gnupg gperf lib32z-dev lib32z1 libc6-dev-i386 libgl1-mesa-dev libncurses5 lib32ncurses5-dev libssl-dev libx11-dev libxml2-utils m4 unzip x11proto-core-dev xsltproc zip zlib1g-dev bsdmainutils cgpt libswitch-perl bc rsync xxd git-core parallel python openjdk-8-jdk
+RUN mkdir /run/sshd;echo 'root:123456' | chpasswd;sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config;sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/' /etc/ssh/sshd_config
+RUN git config --global color.ui true;git config --global pull.rebase true ;git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+ADD repo /usr/bin/
+ADD repo_mtk.git /opt/repo_mtk.git
 CMD ["/usr/sbin/sshd", "-D"]
-
 ```
 
