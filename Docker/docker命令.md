@@ -165,18 +165,19 @@ docker build -f <dockerfile> -t <image_name>:<tag> .
 
 ### 创建容器
 
-```
+```bash
 docker run -itd -p 2201:22 -h pengyujie --name pengyujie -v /intel_p5510/Project:/root/Project aa304c218870
 ```
 
-```
+```bash
 #!/bin/bash
 
 # 用户与端口的对应关系
 declare -A port_map=(
-    ["user1"]=2201
-    ["user2"]=2202
-    ["user3"]=2203
+    ["wushiyong"]=2201
+    ["xujing"]=2202
+    ["pengyujie"]=2203
+    [""]=2204
 )
 
 # 循环遍历用户列表
@@ -186,7 +187,7 @@ do
     port="${port_map[$user]}"
     
     # 创建容器，将指定的端口号分配给容器
-    docker run -itd -p "$port":22 -h "$user" --name "$user" -v "/pool/$user:/root/$user" -e "GIT_COMMITTER_NAME=$user" -e "GIT_COMMITTER_EMAIL=$user@nbbsw.com" your_image_name
+    docker run -itd -p "$port":22 -h "$user" --name "$user" -v "/pool/$user:/root/$user" -v "/pool/share:/root/share" -e "GIT_COMMITTER_NAME=$user" -e "GIT_COMMITTER_EMAIL=$user@nbbsw.com" your_image_name
     
     # 打印端口与用户的对应关系
     echo "User: $user, Port: $port"
@@ -196,13 +197,19 @@ done
 
 ### 添加密钥
 
-```
+```bash
 scp -P 2201 -r ~/.ssh root@172.20.101.58:~/
 ```
 
 ### 添加公钥认证
 
+```bash
+ssh root@172.20.101.103 -p 2201 'cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys'
 ```
-ssh root@172.20.101.58 -p 2201 'cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys'
+
+#### 登录到服务器
+
+```bash
+ssh root@172.20.101.103 -p 2201
 ```
 
