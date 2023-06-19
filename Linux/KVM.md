@@ -25,12 +25,11 @@ KVM（Kernel-based Virtual Machine）是一种开源的虚拟化技术，允许�
 3. 安装KVM和相关工具。在Linux命令行输入以下命令：
 
    ```
-   arduinoCopy code
    sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils virt-manager
    ```
-
+   
    这将安装KVM、libvirt（用于管理虚拟化）、Ubuntu虚拟机构建器、网络桥接工具和虚拟机管理器。
-
+   
 4. 添加当前用户到libvirtd组。在Linux命令行输入以下命令：
 
    ```
