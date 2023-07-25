@@ -1,4 +1,4 @@
-```
+```python
 import numpy as np
 
 
@@ -55,4 +55,3 @@ def drawPolygons(a, b, c):
 drawPolygons(100.0, 80.0, 60.0)
 
 ```
-
