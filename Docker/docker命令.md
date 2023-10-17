@@ -187,7 +187,7 @@ do
     port="${port_map[$user]}"
     
     # 创建容器，将指定的端口号分配给容器
-    docker run -itd -p "$port":22 -h "$user" --name "$user" -v "/pool/$user:/root/$user" -v "/pool/share:/root/share" -e "GIT_COMMITTER_NAME=$user" -e "GIT_COMMITTER_EMAIL=$user@nbbsw.com" your_image_name
+    docker run -itd -p "$port":22 -h "$user" --name "$user" --restart=always -v "/pool/$user:/root/$user" -v "/pool/share:/root/share" -e "GIT_COMMITTER_NAME=$user" -e "GIT_COMMITTER_EMAIL=$user@nbbsw.com" your_image_name
     
     # 打印端口与用户的对应关系
     echo "User: $user, Port: $port"
